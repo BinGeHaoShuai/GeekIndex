@@ -1,11 +1,10 @@
+import myAxios from "../../../../plugins/myAxios";
 import { CommandType } from "../../../command";
 import { useTerminalConfigStore } from "./terminalConfigStore";
-import axios from "axios";
-import myAxios from "../../../../plugins/myAxios";
 
 /**
  * 切换终端背景
- * @author yupi
+ * @author ikun
  */
 const backgroundCommand: CommandType = {
   func: "background",

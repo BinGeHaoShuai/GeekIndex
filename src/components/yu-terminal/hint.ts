@@ -1,12 +1,12 @@
-import { ref } from "vue";
-import { getUsageStr } from "../../core/commands/terminal/help/helpUtils";
-import { commandMap } from "../../core/commandRegister";
 import _, { trim } from "lodash";
+import { ref } from "vue";
+import { commandMap } from "../../core/commandRegister";
 import { useTerminalConfigStore } from "../../core/commands/terminal/config/terminalConfigStore";
+import { getUsageStr } from "../../core/commands/terminal/help/helpUtils";
 
 /**
  * 命令提示功能
- * @author yupi
+ * @author ikun
  */
 const useHint = () => {
   const hint = ref("");

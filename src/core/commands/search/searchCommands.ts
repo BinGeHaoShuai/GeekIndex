@@ -6,15 +6,15 @@ import bingCommand from "./bingCommand";
 import codenavCommand from "./codenavCommand";
 import doubanCommand from "./doubanCommand";
 import douyinCommand from "./douyinCommand";
-import githubCommand from "./githubCommand";
-import googleCommand from "./googleCommand";
-import wangyiyunCommand from "./wangyiyunCommand";
-import zhihuCommand from "./zhihuCommand";
-import gengCommand from "./gengCommand";
 import duckduckgoCommand from "./duckduckgoCommand";
 import fsearchCommand from "./fsearchCommand";
-import sogouCommand from "./sogouCommand";
+import gengCommand from "./gengCommand";
+import githubCommand from "./githubCommand";
+import googleCommand from "./googleCommand";
 import mdnCommand from "./mdnCommand";
+import sogouCommand from "./sogouCommand";
+import wangyiyunCommand from "./wangyiyunCommand";
+import zhihuCommand from "./zhihuCommand";
 
 /**
  * 搜索源
@@ -40,7 +40,7 @@ const fromDict: Record<string, CommandType> = {
 
 /**
  * 搜索命令
- * @author yupi
+ * @author ikun
  */
 const searchCommand: CommandType = {
   func: "search",

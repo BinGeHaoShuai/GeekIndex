@@ -2,7 +2,7 @@ import { CommandType } from "../../command";
 
 /**
  * 必应搜索命令
- * @author yupi
+ * @author ikun
  */
 const bingCommand: CommandType = {
   func: "bing",

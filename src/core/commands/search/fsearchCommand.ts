@@ -2,7 +2,7 @@ import { CommandType } from "../../command";
 
 /**
  * F search 搜索命令
- * @author Edmon-Leo
+ * @author ikun
  */
 const fsearchCommand: CommandType = {
   func: "fsearch",

@@ -58,7 +58,7 @@ class ExpressServer {
       // store session存储实例，默认为一个新的 MemoryStore 实例。
       store: new RedisStore({ client: redisClient }), // 只需设置这个就可存储到redis
       name: "session_id", // 默认connect.sid
-      secret: "yupi", // 设置签名秘钥  内容可以任意填写
+      secret: "ikun", // 设置签名秘钥  内容可以任意填写
       resave: false, // 强制保存，如果session没有被修改也要重新保存,默认true(推荐false)
       saveUninitialized: true, // 如果原先没有session那么就设置，否则不设置(推荐true)
       rolling: true, // 每次请求更新有效时长

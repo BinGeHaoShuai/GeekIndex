@@ -1,9 +1,9 @@
 {
   "manifest_version": 3,
-  "name": "🐟 Index",
+  "name": "GeekIndex",
   "version": "0.0.0",
   "description": "极客范儿的浏览器主页",
-  "author": "liyupi <592789970@qq.com>",
+  "author": "ikun <980214152@qq.com>",
   "chrome_url_overrides" : {
     "newtab": "index.html"
   },

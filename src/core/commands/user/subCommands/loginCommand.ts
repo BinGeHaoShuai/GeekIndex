@@ -4,7 +4,7 @@ import { useUserStore } from "../userStore";
 
 /**
  * 用户登录命令
- * @author yupi
+ * @author ikun
  */
 const loginCommand: CommandType = {
   func: "login",
