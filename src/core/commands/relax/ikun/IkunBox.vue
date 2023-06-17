@@ -5,6 +5,7 @@
 </template>
 
 <script setup lang="ts">
+import { log } from "console";
 import { onMounted, ref } from "vue";
 // @ts-ignore
 import CharVideo from "./charVideo";

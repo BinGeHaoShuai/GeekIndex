@@ -87,7 +87,8 @@ CharVideo.prototype.drawText = function () {
 
 CharVideo.prototype.interval = function () {
   var that = this;
-  requestAnimationFrame(function () {
+  console.log("that:", that);
+  let animationId = requestAnimationFrame(function () {
     if (!that.video.paused) {
       that.ctx.drawImage(that.video, 0, 0, that.width, that.height);
       var data = that.loadData();
@@ -96,6 +97,11 @@ CharVideo.prototype.interval = function () {
     }
     that.interval();
   });
+  //动画结束时，清除requestAnimationFrame函数，避免内存泄漏
+  if (that.video.ended) {
+    console.log("ikun动画结束");
+    cancelAnimationFrame(animationId);
+  }
 };
 
 CharVideo.prototype.playFile = function (blob) {
